@@ -3,7 +3,7 @@ import { Appointment, AppointmentStatus } from '@/types/appointment';
 import { useAuth } from '@/contexts/AuthContext';
 
 // Google Sheets API configuration
-const GOOGLE_SHEETS_API_KEY = import.meta.env.VITE_GOOGLE_SHEETS_API_KEY || '';
+const GOOGLE_SHEETS_API_KEY = process.env.API_KEY || '';
 const GOOGLE_SHEETS_API_BASE = 'https://sheets.googleapis.com/v4/spreadsheets';
 
 /**
